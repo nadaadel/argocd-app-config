@@ -8,4 +8,4 @@ metadata:
 spec:
   targetService: myapp
   trafficWeight: 50
-  image: nanajanashia/argocd-app:1.2
+  image: nginx:latest
