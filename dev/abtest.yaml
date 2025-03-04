@@ -1,0 +1,11 @@
+apiVersion: abtesting.com/v1
+kind: ABTest
+metadata:
+  labels:
+    app.kubernetes.io/name: ab-testing-operator
+    app.kubernetes.io/managed-by: kustomize
+  name: wallet-service-deployment
+spec:
+  targetService: myapp
+  trafficWeight: 50
+  image: nanajanashia/argocd-app:1.2
