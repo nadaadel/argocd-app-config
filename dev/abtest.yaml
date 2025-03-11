@@ -5,6 +5,7 @@ metadata:
     app.kubernetes.io/name: ab-testing-operator
     app.kubernetes.io/managed-by: kustomize
   name: demo-service-abtest
+  namespace: default
 spec:
   targetService: demo-service
   trafficWeight: 10
