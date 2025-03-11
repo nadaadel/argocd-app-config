@@ -6,6 +6,8 @@ metadata:
     app.kubernetes.io/managed-by: kustomize
   name: demo-service-abtest
 spec:
-  targetService: myapp
-  trafficWeight: 50
+  targetService: demo-service
+  trafficWeight: 10
   image: nginx:latest
+  port: 80
+  Replicas: 1
