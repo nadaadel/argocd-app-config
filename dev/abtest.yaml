@@ -10,4 +10,4 @@ spec:
   trafficWeight: 10
   image: nginx:latest
   port: 80
-  Replicas: 1
+  replicas: 1
